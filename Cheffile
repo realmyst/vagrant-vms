@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'chef-client'
+cookbook 'apt'
+
+cookbook 'rvm',
+  :git => 'git://github.com/fnichol/chef-rvm.git'
+
+cookbook 'vagrant',
+  :git => 'git://github.com/realmyst/vagrant-chef.git'
+
+cookbook 'postgresql',
+  :git => 'git://github.com/phlipper/chef-postgresql.git'
+
+cookbook 'golang',
+  :git => 'git://github.com/NOX73/chef-golang.git'
